@@ -1,10 +1,10 @@
 ## Introduction
 
 
-<b>Discipline | <b>Fill your discipline name here
+<b>Discipline | <b> Electrical Engineering 
 :--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+<b> Lab | <b> Control Engineering Virtual Laboratory (PCC-EE17)
+<b> Experiment|     <b> 8. Show the bode plot for a given transfer function of the system
 
 ### About the Experiment 
   Fill a brief description of this experiment here
