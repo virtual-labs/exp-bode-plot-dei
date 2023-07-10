@@ -545,9 +545,9 @@ denominator2=denominator2+"}}$$";
       //console.log(wpc);
     }
     if (angle(c,d,p,q,r,0.001)<-179.90&&angle(c,d,p,q,r,0.001)>-180.10)
-    wpc = 0;
+    {wpc = 0; cp=1;}
     else if (angle(c,d,p,q,r,10000)<-179.90&&angle(c,d,p,q,r,10000)>-180.10)
-    wgc = Infinity;
+    {wgc = Infinity; cp=1;}
 
  }
 
