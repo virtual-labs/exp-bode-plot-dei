@@ -239,11 +239,11 @@ denominator2=denominator2+"}}$$";
          document.getElementById("out4").innerHTML = out4;
          
          if (cp==1)
-         document.getElementById("out5").innerHTML = "$${wcp = "+ wpc+'}$$';
+         document.getElementById("out5").innerHTML = "$${wcp = "+ wpc+"}$$"+"<br> $${ Gain Margin = "+gam+"}$$";
          else
          document.getElementById("out5").innerHTML = "$${wcp = NaN}$$";
          if (cg==1)
-         document.getElementById("out6").innerHTML = "$${wcg = "+ wgc+"}$$";
+         document.getElementById("out6").innerHTML = "$${wcg = "+ wgc+"}$$"+"<br> $${ Phase Margin = "+phm+"°}$$";
          else
          document.getElementById("out6").innerHTML = "$${wcg = NaN}$$";
         
@@ -536,18 +536,31 @@ denominator2=denominator2+"}}$$";
     }
 
     for (let i = 0.1; i<100; i+=0.01)
-    { console.log(magnitude(c,d,p,q,r,1.52));
+    { console.log(angle(c,d,p,q,r,0.001));
       if (magnitude(c,d,p,q,r,i)>-0.1 && magnitude(c,d,p,q,r,i)<0.1)
-      {wgc = i.toFixed(2); cg=1}
+      {wgc = i.toFixed(2); cg=1;
+        phm = (180+angle(c,d,p,q,r,i)).toFixed(2);}
       //console.log(wgc);
       if (angle(c,d,p,q,r,i)<-179 && angle(c,d,p,q,r,i)>-181)
-      {wpc = i.toFixed(2); cp=1;}
+      {wpc = i.toFixed(2); cp=1;
+        gam = (-1*magnitude(c,d,p,q,r,i)).toFixed(2);}
       //console.log(wpc);
     }
     if (angle(c,d,p,q,r,0.001)<-179.90&&angle(c,d,p,q,r,0.001)>-180.10)
-    {wpc = 0; cp=1;}
+    {wpc = 0; cp=1;
+      gam = Infinity;}
+    
     else if (angle(c,d,p,q,r,10000)<-179.90&&angle(c,d,p,q,r,10000)>-180.10)
-    {wgc = Infinity; cp=1;}
+    {wgc = Infinity; cp=1;
+      phm = Infinity;
+    }
+    console.log(wpc);
 
  }
 
+ 
+
+ 
+
+ 
+ 
