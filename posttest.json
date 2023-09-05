@@ -1,0 +1,62 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "In a 4th order all pole system, what is the slope at high frequencies?",
+      "answers": {
+        "a": "-80dB/decade",
+        "b": "-40dB/decade",
+        "c": "40dB/decade",
+        "d": "80dB/decade"
+      },
+
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The value of phase of G(jw) at gain crossover frequency is -125 degrees. The phase margin is",
+      "answers": {
+        "a": "-125 degrees",
+        "b": "125 degrees",
+        "c": "55 degrees",
+        "d": "-55 degrees"
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a bode plot, phase cross-over comes after gain cross-over, the system is",
+      "answers": {
+        "a": "Unstable",
+        "b": "Marginally Stable",
+        "c": "Cannot be determined",
+        "d": "Stable"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The system is stable when",
+      "answers": {
+        "a": "Gain Margin > 0 and Phase Margin < 0",
+        "b": "Gain Margin > 0 and Phase Margin > 0",
+        "c": "Gain Margin < 0 and Phase Margin < 0",
+        "d": "Gain Margin < 0 and Phase Margin > 0"
+      },
+      "correctAnswer": "b",
+          "difficulty": "beginner"
+    },
+    {
+      "question": "A system consists of two zeroes and four poles, the slope at high frequencies is",
+      "answers": {
+        "a": "-40 dB/decade",
+        "b": "-80 dB/decade",
+        "c": "-20 dB/decade",
+        "d": "None of the above"
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}
