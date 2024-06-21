@@ -2,37 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The frequency at which phase of the sytem acquires the value of ___ degrees is called Phase Crossover Frequency",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "90",
+        "b": "-90",
+        "c": "-180",
+        "d": "180"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "A pole is situated at the origin, the magnitude plot represents __",
+      "answers": {
+        "a": "20log(w) dB",
+        "b": "-20log(w) dB",
+        "c": "10log(w) dB",
+        "d": "-10log(w) dB"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The frequency at which the magnitude becomes zero decibels is called",
+      "answers": {
+        "a": "Resonant frequency",
+        "b": "Cut-off frequency",
+        "c": "Phase cross-over frequency",
+        "d": "Gain cross-over frequency"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "The magnitude is zero when the phase is -90 degrees, the phase margin is",
+      "answers": {
+        "a": "90 degrees",
+        "b": "-90 degrees",
+        "c": "-180 degreed",
+        "d": "180 degrees"
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
-    {
-      "question": "This is a Sample Question 2?",
+        {
+      "question": "The system has 4 zeroes and 10 poles, the slope of magnitude plot at very high frequency is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "-200 dB/decade",
+        "b": "-120 dB/decade",
+        "c": "-60 dB/decade",
+        "d": "60 dB/decade"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
